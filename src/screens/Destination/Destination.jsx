@@ -3,8 +3,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import { } from './destination.scss';
 
 export default function Destination() {
-  return (<>
+  return (<div className="destination">
     <NavBar />
-    DESTINATION VIEW
-  </>)
+  </div>)
 }
