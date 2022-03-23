@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+$black-default-color: #0b0d17;
+$cyan-default-color: #d0d6f9;
+$white-default-color: #ffff;
+$nav-background-color: #979797;
+
+$title-font-h1: 9rem "Bellefair", serif;
+$title-font-h2: 6.25rem "Bellefair", serif;
+$title-font-h3: 3.5rem "Bellefair", serif;
+$title-font-h4: 2rem "Bellefair", serif;
+$title-font-h5: 1.75rem "Barlow Condensed", sans-serif #d0d6f9;
+
+$letter-spacing-h5: 0.3rem;
+$letter-spacing-h2: 0.25rem;
+$letter-spacing-nav: 0.27rem;
+
+$subtitle-font-h1: 1.75rem "Bellefair", serif;
+$subtitle-font-h2: 0.875rem "Barlow Condensed", sans-serif #d0d6f9;
+
+$nav-font: 1rem "Barlow Condensed", sans-serif;

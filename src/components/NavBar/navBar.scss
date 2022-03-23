@@ -1,0 +1,38 @@
+@use "../../app" as v;
+
+.navbar {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  margin-right: 0;
+  padding: 2% 0;
+  .icon {
+    width: 40%;
+    display: flex;
+    color: white;
+    .logo {
+      width: 20%;
+      height: 100px;
+      border-radius: 75%;
+      .logo-svg {
+        width: 80px;
+        height: 80px;
+        background-color: v.$white-default-color;
+        background-image: url("../../assets/shared/logo.svg");
+        background-size: contain;
+        background-position: center;
+        border-radius: 50%;
+      }
+    }
+    .line {
+      width: 80%;
+    }
+  }
+  .nav {
+    width: 60%;
+    height: 80px;
+    background-color: v.$nav-background-color;
+    backdrop-filter: blur(81.55px);
+    background-color: rgba(151, 151, 151, 0.04);
+  }
+}
