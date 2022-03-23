@@ -1,0 +1,13 @@
+@use "../../app.scss" as v;
+
+.default-p {
+  font-size: 1.1rem;
+  line-height: 32px;
+  font-family: "Barlow", sans-serif;
+  color: #d0d6f9;
+  font-weight: 400;
+  width: 444px;
+
+  @media screen and (max-width: v.$monitor-three) {
+  }
+}

@@ -1,6 +1,9 @@
 @use "../../app" as v;
 
 .navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 95%;
   display: flex;
   margin: 0 auto;
@@ -16,9 +19,9 @@
       border-radius: 75%;
 
       .logo-svg {
-        margin: 0 auto;
-        width: 70px;
-        height: 70px;
+        margin: 5% auto;
+        width: 60px;
+        height: 60px;
         background-color: v.$white-default-color;
         background-image: url("../../assets/shared/logo.svg");
         background-size: contain;
@@ -73,7 +76,10 @@
           }
         }
         :hover {
-          border-bottom: 3px solid white;
+          border-bottom: 4px solid rgba(255, 255, 255, 0.383);
+        }
+        :active {
+          border-bottom: 3px solid rgba(255, 255, 255, 1);
         }
       }
       @media screen and (max-width: v.$monitor-three) {
