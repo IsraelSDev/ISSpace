@@ -19,16 +19,16 @@ export default function NavBar() {
         <nav>
           <ul>
             <li>
-              <Link to=""><span>00</span> HOME</Link>
+              <Link to="/"><span>00</span> HOME</Link>
             </li>
             <li>
-              <Link to=""><span>01</span> DESTINATION </Link>
+              <Link to="/destination"><span>01</span> DESTINATION </Link>
             </li>
             <li>
-              <Link to=""><span>02</span> CREW</Link>
+              <Link to="/crew"><span>02</span> CREW</Link>
             </li>
             <li>
-              <Link to=""><span>03</span> TECHNOLOGY</Link>
+              <Link to="/technology"><span>03</span> TECHNOLOGY</Link>
             </li>
           </ul>
         </nav>
