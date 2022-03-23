@@ -67,39 +67,40 @@
         list-style: none;
         li {
           width: 100%;
-          vertical-align: middle;
-          align-self: center;
+          display: flex;
+          height: 100%;
+
           a {
+            display: flex;
+            height: 100%;
+            margin: 0 auto;
             text-decoration: none;
             color: white;
             font: v.$nav-font;
             letter-spacing: v.$letter-spacing-nav;
-            padding-bottom: 10%;
-            span {
-              font-weight: bold;
-              border-bottom: 0;
+
+            h4 {
+              font-weight: normal;
+              align-self: center;
+              span {
+                font-weight: bold;
+                border-bottom: 0;
+              }
             }
             :hover {
               border-bottom: 0;
             }
           }
           :hover {
-            border-bottom: 4px solid rgba(255, 255, 255, 0.383);
-          }
-          :active {
-            border-bottom: 3px solid rgba(255, 255, 255, 1);
+            transition: 0.1s;
+            border-bottom: 5px solid rgba(255, 255, 255, 0.383);
           }
         }
-        // @media screen and (max-width: v.$monitor-three) {
-        //   margin-top: 3%;
-        //   @media screen and (max-width: v.$monitor-two) {
-        //     margin-top: 3.5%;
-        //     @media screen and (max-width: v.$monitor-one) {
-        //       margin-top: 4.5%;
-        //     }
-        //   }
-        // }
       }
     }
   }
+}
+
+.active {
+  border-bottom: 5px solid rgba(255, 255, 255, 1);
 }

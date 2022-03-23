@@ -4,9 +4,6 @@ import { } from "./navBar.scss";
 
 export default function NavBar() {
 
-  const [id, setId] = useState("home");
-
-
   return (<>
     <div className="navbar">
       <div className="icon">
@@ -22,17 +19,17 @@ export default function NavBar() {
       <div className="nav">
         <nav>
           <ul>
-            <li id="home">
-              <Link to="/"><span>00</span> HOME</Link>
+            <li>
+              <Link to="/"><h4><span>00</span> HOME</h4></Link>
             </li>
-            <li id="destination">
-              <Link to="/destination"><span>01</span> DESTINATION </Link>
+            <li >
+              <Link to="/destination"><h4><span>01</span> DESTINATION</h4> </Link>
             </li>
-            <li id="crew">
-              <Link to="/crew"><span>02</span> CREW</Link>
+            <li >
+              <Link to="/crew"><h4><span>02</span> CREW</h4></Link>
             </li>
-            <li id="technology">
-              <Link to="/technology"><span>03</span> TECHNOLOGY</Link>
+            <li>
+              <Link to="/technology"><h4><span>03</span> TECHNOLOGY</h4></Link>
             </li>
           </ul>
         </nav>
