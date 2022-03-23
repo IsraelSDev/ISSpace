@@ -8,6 +8,8 @@ body {
   height: 100%;
 }
 
+//VARIABLES - COLORS
+
 $black-default-color: #0b0d17;
 $cyan-default-color: #d0d6f9;
 $white-default-color: #ffff;
@@ -27,3 +29,14 @@ $subtitle-font-h1: 1.75rem "Bellefair", serif;
 $subtitle-font-h2: 0.875rem "Barlow Condensed", sans-serif #d0d6f9;
 
 $nav-font: 1rem "Barlow Condensed", sans-serif;
+
+//VARIABLES - DEVICES SIZES
+$monitor-three: 1680px;
+$monitor-two: 1440px;
+$monitor-one: 1280px;
+
+$mobile-four: 1024px;
+$mobile-three: 768px;
+$mobile-two: 375px;
+$mobile-one: 320px;
+$mobile-mini: 100px;

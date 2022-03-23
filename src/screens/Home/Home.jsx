@@ -6,7 +6,7 @@ export default function Home(props) {
   return (<>
     <div className="home">
       <NavBar />
-      <h1> My home page!! </h1>
+
     </div>
   </>)
 }

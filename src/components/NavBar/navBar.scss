@@ -76,6 +76,15 @@
           border-bottom: 3px solid white;
         }
       }
+      @media screen and (max-width: v.$monitor-three) {
+        margin-top: 3%;
+        @media screen and (max-width: v.$monitor-two) {
+          margin-top: 3.5%;
+          @media screen and (max-width: v.$monitor-one) {
+            margin-top: 4.5%;
+          }
+        }
+      }
     }
   }
 }
