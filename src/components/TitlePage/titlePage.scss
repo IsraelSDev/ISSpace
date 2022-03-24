@@ -1,0 +1,20 @@
+@use "../../app.scss" as v;
+
+.titleText {
+  margin: 5% 6%;
+  font: v.$title-font-h5;
+  line-height: 2rem;
+  letter-spacing: 4.7px;
+  color: v.$white-default-color;
+
+  .titleNumber {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+}

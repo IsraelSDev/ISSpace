@@ -1,0 +1,42 @@
+@use "../../app.scss" as v;
+
+.activa {
+  color: v.$white-default-color;
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+.navPlanets {
+  nav {
+    display: flex;
+
+    ul {
+      width: 40%;
+      font: v.$title-text-font;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      list-style: none;
+      display: flex;
+      margin: -2% 0 0 auto;
+
+      li {
+        color: v.$cyan-default-color;
+        text-align: center;
+        width: calc(80% / 4);
+        cursor: pointer;
+        h5 {
+          margin: 0 auto 0 0;
+          width: 50px;
+          text-align: center;
+          height: 100%;
+        }
+
+        :hover {
+          transition: 0.2s;
+          border-bottom: 3px solid rgba(255, 255, 255, 0.383);
+        }
+      }
+      :nth-child(3) h5 {
+        width: 70px;
+      }
+    }
+  }
+}
