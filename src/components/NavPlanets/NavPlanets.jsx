@@ -1,23 +1,22 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import PlanetNameContext from "../../context/PlanetNameContext";
 import { } from './navPlanets.scss'
 
-export default function NavPlanets() {
 
+function NavPlanets() {
 
-  const [planetName, setPlanetName] = useState("");
-
+  const planetName = useContext(PlanetNameContext);
 
   const setBorder = (e) => {
     let el = document.querySelectorAll('.activa');
     let namePlanet = e.innerHTML;
-    setPlanetName(namePlanet);
-    console.log(namePlanet);
+    planetName.setNamePlanet(namePlanet);
     el.forEach((elemento) => {
       elemento.classList.remove('activa');
     })
     e.classList.add('activa');
-
   }
+
   return (<div className="navPlanets">
     <nav>
       <ul onClick={(e) => {
@@ -26,9 +25,8 @@ export default function NavPlanets() {
         } else {
           e.preventDefault();
         }
-
       }}>
-        <li><h5>MOOM</h5></li>
+        <li><h5 className="activa">MOOM</h5></li>
         <li><h5>MARS</h5></li>
         <li><h5>EUROPA</h5></li>
         <li><h5>TITAN</h5></li>
@@ -36,3 +34,5 @@ export default function NavPlanets() {
     </nav>
   </div>)
 }
+
+export default NavPlanets;

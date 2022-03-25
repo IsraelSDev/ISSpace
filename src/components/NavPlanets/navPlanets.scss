@@ -1,9 +1,5 @@
 @use "../../app.scss" as v;
 
-.activa {
-  color: v.$white-default-color;
-  border-bottom: 3px solid rgb(255, 255, 255);
-}
 .navPlanets {
   nav {
     display: flex;
@@ -39,4 +35,8 @@
       }
     }
   }
+}
+.activa {
+  color: v.$white-default-color;
+  border-bottom: 3px solid rgb(255, 255, 255);
 }
