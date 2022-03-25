@@ -21,8 +21,10 @@
     h5 {
       font-size: 1.75rem;
       letter-spacing: 4.75px;
-      font-family: "Barlow Condensed", sans-serif;
+      line-height: 33px;
+      font: v.$title-font-h5;
       color: #d0d6f9;
+      font-weight: 400;
     }
   }
   .button-box {
