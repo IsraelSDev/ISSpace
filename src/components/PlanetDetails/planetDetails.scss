@@ -1,18 +1,17 @@
+@use "../../app.scss" as v;
+
 .planetDetailContainer {
   width: 100%;
-  // background-color: cyan;
   display: flex;
+
   .planetImageContainer {
     width: 60%;
     height: 100%;
     min-height: 400px;
-    // background-color: red;
     .planetImage {
       width: 60%;
       margin: 0 0 0 15%;
-      // background-color: cyan;
       height: 400px;
-      // background-image: url("../../assets/destination/image-moon.png");
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -22,6 +21,19 @@
     width: 40%;
     height: 100%;
     min-height: 400px;
-    background-color: rgb(153, 0, 255);
+    .upSideDescription {
+      h2 {
+        padding: 4% 0;
+        font: v.$title-font-h2;
+        font-weight: 400;
+        line-height: 7.1rem;
+      }
+    }
+    .lineDivision {
+      margin-top: 10%;
+      width: 75%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.24);
+    }
   }
 }
