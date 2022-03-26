@@ -26,7 +26,7 @@ function NavPlanets() {
           e.preventDefault();
         }
       }}>
-        <li><h5 className="activa">MOOM</h5></li>
+        <li><h5 className="activa">MOON</h5></li>
         <li><h5>MARS</h5></li>
         <li><h5>EUROPA</h5></li>
         <li><h5>TITAN</h5></li>
