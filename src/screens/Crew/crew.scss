@@ -1,0 +1,54 @@
+@use "../../app.scss" as v;
+
+.crew {
+  background-color: #0b0e17;
+  background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  background-position: top;
+  background-size: cover;
+  height: auto;
+  min-height: 100vh;
+  color: white;
+  padding: 8% 10%;
+  width: 100%;
+  .crewWrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    .crewDescription {
+      width: 50%;
+
+      background-color: rgba(0, 255, 255, 0.103);
+
+      h4 {
+        font: v.$title-font-h4;
+        text-transform: uppercase;
+        line-height: 36px;
+        font-weight: 400;
+        opacity: 0.5;
+      }
+      h3 {
+        font: v.$title-font-h3;
+        font-weight: 400;
+        line-height: 64px;
+        text-transform: uppercase;
+      }
+    }
+    .changePilot {
+      display: flex;
+      width: 20%;
+      button {
+        margin: 0 auto 0 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 0;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.17;
+      }
+    }
+  }
+}
+.active {
+  opacity: 1 !important;
+}

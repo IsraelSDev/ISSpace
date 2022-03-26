@@ -28,8 +28,6 @@ const PlanetDetail = (props) => {
     })
   }, [nameOfSelected.namePlanet])
 
-  // console.log(data.destinations[0].name) 
-
   return (<div className='planetDetailContainer'>
     <div className='planetImageContainer'>
       <div className='planetImage' style={{ backgroundImage: `url("${planetImagePic}")` }} />

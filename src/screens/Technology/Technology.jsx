@@ -3,8 +3,8 @@ import NavBar from "../../components/NavBar/NavBar";
 import { } from './technology.scss';
 
 export default function Technology() {
-  return (<>
+  return (<div className="technologyScreen">
     <NavBar />
     TECHNOLOGY VIEW
-  </>)
+  </div>)
 }
