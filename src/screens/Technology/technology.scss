@@ -1,3 +1,5 @@
+@use "../../app.scss" as v;
+
 .technologyScreen {
   background-color: #0b0e17;
   background-image: url("../../assets/technology/background-technology-desktop.jpg");
@@ -6,6 +8,67 @@
   height: auto;
   min-height: 100vh;
   color: white;
-  padding: 8% 10%;
+  padding: 5% 0 1% 5%;
   width: 100%;
+
+  .launchContent {
+    width: 100%;
+    padding: 2% 0 2% 6%;
+    display: flex;
+    .launchNav {
+      display: flex;
+      flex-direction: column;
+      padding: 2% 0;
+      width: 15%;
+      align-self: center;
+    }
+    button {
+      font: v.$title-font-h4;
+      letter-spacing: 2px;
+      margin: 10% 0;
+      font-weight: 400;
+      line-height: 37px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 0;
+      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0);
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.308);
+      color: white;
+    }
+  }
+  .launchDetail {
+    padding: 5% 0;
+    width: 45%;
+    h6 {
+      font: v.$title-text-font;
+      text-transform: uppercase;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      font-weight: 400;
+      color: v.$cyan-default-color;
+      font-size: 1rem;
+    }
+    h3 {
+      font: v.$title-font-h3;
+      line-height: 64px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 3% 0;
+    }
+  }
+  .launchPhoto {
+    width: 45%;
+    background-color: green;
+    min-height: 500px;
+  }
+}
+
+.activated {
+  color: black !important;
+  background-color: v.$white-default-color !important;
+}
+.default-p {
 }

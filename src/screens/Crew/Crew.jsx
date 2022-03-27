@@ -40,7 +40,7 @@ export default function Crew() {
 
   return (<div className="crew">
     <NavBar />
-    <TitlePage title={"MEET YOUR CREW"} numberTitle={"02"} margin={"5% 6% 1% 6%"} />
+    <TitlePage title={"MEET YOUR CREW"} numberTitle={"02"} margin={"10% 6% 1% 6%"} />
     <div className="crewWrapper">
       <div className="crewDescription">
         <h4>{crewRole}</h4>
